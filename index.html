@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="si">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A/L Notes - ගංවතුර ආධාර</title>
+    <link rel="icon" type="image/x-icon" href="https://mlt5kycrbujs.i.optimole.com/cb:B-Cj.65c/w:auto/h:auto/q:mauto/ig:avif/https://pasindulakshan.com/wp-content/uploads/2025/01/Untitled-design.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Sinhala:wght@400;600;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Noto Sans Sinhala', sans-serif; }
+        .hero-gradient { background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <header class="hero-gradient text-white shadow-lg">
+        <div class="container mx-auto px-4 py-6 flex justify-between items-center">
+            <h1 class="text-2xl font-bold tracking-wide">A/L NOTE SUPPORT </h1>
+            <a href="#upload-section" class="bg-yellow-500 hover:bg-yellow-400 text-black font-bold py-2 px-4 rounded-full transition duration-300">
+                Notes Upload කරන්න
+            </a>
+        </div>
+    </header>
+
+    <section class="hero-gradient text-white py-20 px-4 text-center">
+        <div class="max-w-3xl mx-auto">
+            <h2 class="text-4xl md:text-5xl font-extrabold mb-6 leading-tight">
+                ගංවතුරෙන් Note අහිමි වූ<br>
+                <span class="text-yellow-400">අපේම දරුවන්ට අත්වැලක්</span>
+            </h2>
+            <p class="text-lg text-gray-300 mb-8">
+                ඔබ සතුව ඇති A/L සටහන් අපට ලබාදෙන්න. අසරණ වූ දරුවන්ට ඒවා නොමිලේ ලබාගැනීමට පහසුකම් සලසමු.
+            </p>
+            <div class="flex flex-col md:flex-row justify-center gap-4">
+                <a href="#download-section" class="bg-white text-slate-900 font-bold py-3 px-8 rounded-lg shadow-lg hover:bg-gray-100 transition">
+                    Notes Download කරන්න
+                </a>
+                <a href="#upload-section" class="border-2 border-yellow-500 text-yellow-400 font-bold py-3 px-8 rounded-lg hover:bg-yellow-500 hover:text-black transition">
+                    මට උදව් කළ හැකියි
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="download-section" class="py-16 container mx-auto px-4">
+        <div class="text-center mb-12">
+            <h3 class="text-3xl font-bold text-gray-900">විෂය ධාරාවන් තෝරන්න</h3>
+            <p class="text-gray-600 mt-2">ඔබට අවශ්‍ය විෂයට අදාළ ෆෝල්ඩරය පහතින් තෝරන්න</p>
+        </div>
+
+        <div id="subjects-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+            </div>
+    </section>
+
+    <section id="upload-section" class="bg-blue-50 py-16 px-4">
+        <div class="max-w-4xl mx-auto bg-white rounded-2xl shadow-xl overflow-hidden flex flex-col md:flex-row">
+            <div class="md:w-1/2 p-8 md:p-12 bg-blue-600 text-white flex flex-col justify-center">
+                <h3 class="text-3xl font-bold mb-4">ඔබ ළඟ Notes තිබේද?</h3>
+                <p class="mb-6 opacity-90">පොතක් නැති දරුවෙක්ට අකුරක් දීම තරම් පිනක් තවත් නෑ. ඔබ සතු PDF හෝ පැහැදිලි ඡායාරූප අපට එවන්න.</p>
+                <ul class="space-y-2 text-sm opacity-80">
+                    <li>✅ PDF ලෙස තිබේ නම් වඩාත් සුදුසුයි</li>
+                    <li>✅ පැහැදිලි ඡායාරූප වුවද කමක් නැත</li>
+                    <li>✅ නම සහ විෂය සඳහන් කරන්න</li>
+                </ul>
+            </div>
+            <div class="md:w-1/2 p-8 md:p-12 flex items-center justify-center">
+                <a id="google-form-btn" href="#" target="_blank" class="w-full text-center bg-gray-900 hover:bg-gray-800 text-white font-bold py-4 px-6 rounded-xl shadow-lg transition transform hover:scale-105">
+                    Google Form එක හරහා Upload කරන්න
+                    <span class="block text-xs font-normal text-gray-400 mt-1">(Gmail ගිණුමක් අවශ්‍ය වේ)</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 text-gray-500 py-8 text-center">
+        <p>&copy; 2024 Education Relief LK. නිර්මාණය සහාය සහ මෙහෙයවීම ස්වෙච්ඡා පිරිසක් විසිනි.</p>
+    </footer>
+
+    <script>
+        // ==========================================
+        // මචං, මෙන්න මේ ටික විතරයි උඹට වෙනස් කරන්න තියෙන්නේ
+        // ==========================================
+
+        // 1. Google Form Link එක මෙතනට දාන්න (Upload Button එකට)
+        const googleFormLink = "https://docs.google.com/forms/d/e/1FAIpQLSemS0B7uSHb25AbgZQNkRri9RrOdRsvSQivuuoCsBwtylLnxA/viewform?usp=header"; 
+
+        // 2. Google Drive Folders වල Links ටික මෙතනට දාන්න
+        const subjects = [
+            { 
+                name: "ජීව විද්‍යාව (Biology)", 
+                desc: "Bio, Chemistry, Physics සටහන්",
+                icon: "🧬", 
+                link: "https://drive.google.com/drive/folders/11IlDMl1QJbugAkT74lq3hcR3xJ6t5xjw?usp=drive_link" 
+            },
+            { 
+                name: "ගණිත අංශය (Maths)", 
+                desc: "Combined Maths, Physics, Chemistry",
+                icon: "📐", 
+                link: "https://drive.google.com/drive/folders/1ZbXne5fqSX6u6JuHwjUV0GSYA2zzGPWt?usp=drive_link" 
+            },
+            { 
+                name: "වාණිජ අංශය (Commerce)", 
+                desc: "Accounting, Econ, BS",
+                icon: "📊", 
+                link: "https://drive.google.com/drive/folders/1u2UsCAypW6cGt_MoFaHHtTq-NvV6F_lX?usp=drive_link" 
+            },
+            { 
+                name: "කලා අංශය (Arts)", 
+                desc: "Sinhala, History, Geography, Logic",
+                icon: "🎨", 
+                link: "https://drive.google.com/drive/folders/1wdsWuX4Mu-p3k-20oaJknE2zC0YOEF5n?usp=drive_link" 
+            },
+            { 
+                name: "තාක්ෂණ අංශය (Tech)", 
+                desc: "SFT, ET, BST, ICT",
+                icon: "💻", 
+                link: "https://drive.google.com/drive/folders/1H7011v4aNIeYzf-3U_foWDT5lLhczkzl?usp=drive_link" 
+            },
+            { 
+                name: "වෙනත් (Others)", 
+                desc: "General English, GIT",
+                icon: "📚", 
+                link: "https://drive.google.com/drive/folders/1NTSLFZnm2m7mD4auRDQCbxDTzyHe2k-L?usp=drive_link" 
+            }
+        ];
+
+        // ==========================================
+        // පහළ තියෙන කෝඩ් එක වෙනස් කරන්න එපා (Logic)
+        // ==========================================
+
+        document.getElementById('google-form-btn').href = googleFormLink;
+
+        const grid = document.getElementById('subjects-grid');
+        
+        subjects.forEach(sub => {
+            const card = document.createElement('a');
+            card.href = sub.link;
+            card.target = "_blank"; // Open in new tab
+            card.className = "group bg-white p-6 rounded-xl shadow-md hover:shadow-2xl transition duration-300 border border-gray-100 flex flex-col items-center text-center hover:-translate-y-1";
+            
+            card.innerHTML = `
+                <div class="text-5xl mb-4 group-hover:scale-110 transition duration-300">${sub.icon}</div>
+                <h4 class="text-xl font-bold text-gray-800 mb-2 group-hover:text-blue-600">${sub.name}</h4>
+                <p class="text-sm text-gray-500">${sub.desc}</p>
+                <div class="mt-4 text-blue-500 font-semibold text-sm flex items-center gap-2">
+                    Folder එකට යන්න
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                    </svg>
+                </div>
+            `;
+            grid.appendChild(card);
+        });
+    </script>
+</body>
+</html>
